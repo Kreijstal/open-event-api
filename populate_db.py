@@ -125,11 +125,6 @@ def create_event_locations():
     for loc_ in event_location:
         get_or_create(EventLocation, name=loc_)
 
-def create_event_locations():
-    event_location = ['India', 'Singapore', 'Berlin', 'New York', 'Hong Kong']
-    for loc_ in event_location:
-        get_or_create(EventLocation, name=loc_)
-
 
 def create_permissions():
     orgr = Role.query.get(1)
